@@ -64,6 +64,9 @@ export default Ember.Controller.extend(UserSettings, {
                     self.set("general_error", "Špatná odpověď ze serveru. Zkus to znovu za chvíli.");
                 }
             });
+        },
+        close_gdpr: function() {
+            Ember.$('#gdpr-modal').modal('hide');
         }
     }
 });
