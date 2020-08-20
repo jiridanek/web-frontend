@@ -179,9 +179,24 @@
           </button>
             </div>-->
 
-      <button id="btn-gdpr" type="button" class="btn btn-default btn-sm hidden-xs hidden-print" data-toggle="modal" data-target="#gdpr-modal">
+      <!--
+      <button id="btn-gdpr" type="button" class="btn btn-primary btn-xs hidden-xs hidden-print" data-toggle="modal" data-target="#gdpr-modal">
         <p>Text souhlasu se zpracováním tvých údajů</p>
       </button>
+      -->
+      <p
+        style="font-size: unset;"
+      >
+        Souhlasím
+      <a
+        data-toggle="modal"
+        data-target="#gdpr-modal"
+        style="text-decoration: underline; color: #fbb041;"
+        href=""
+      ><!-- Todo: Color should be assigned from scss-->
+        se zpracováním svých osobních údajů
+      </a>
+      </p>
 
             <div align="center" style="margin:30px">
                 <button type="submit" class="btn btn-primary">
@@ -201,7 +216,7 @@
 
   <!-- Modal -->
   <div class="modal fade" id="gdpr-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
-    <div class="modal-dialog" role="document" style="width: 50%;">
+    <div class="modal-dialog" role="document" style="width: max(50%, 600px);">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" {{action "close_gdpr"}} aria-label="Close"><span aria-hidden="true">&times;</span></button>
